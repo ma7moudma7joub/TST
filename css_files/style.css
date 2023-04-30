@@ -1,0 +1,213 @@
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ 	-webkit-box-sizing:border-box;
+ 	-ms-box-sizing:border-box;
+ 	box-sizing:border-box;
+    transition: .3s;
+ }
+:root {
+    --main-color:#19c8fa;
+ }
+ html {
+ 	scroll-behavior: smooth;
+ }
+ body {
+ }
+ ul {
+ 	list-style: none;
+ }
+ a {
+ 	color: black;
+ 	text-decoration: none;
+ }
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header {
+    height: 73px;
+    background-color:#ededed;
+    position:fixed;
+    z-index: 2;
+    width: 100%;
+
+}
+.header  img {
+  width: 72px;
+  z-index: 2;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.header .nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header .nav  ul {
+    display:flex;
+    gap: 20px;
+    transition: 1s;
+}
+.header .nav  ul li a {
+    font-size: 20px;
+    font-weight:500;
+    transition: .3s;
+    padding: 10px;
+    position: relative;
+}
+.header .nav  ul li a:hover {
+    color: var(--main-color);
+}
+.landing {
+  padding-top: 73px;
+  background-image: url(../images/liveclean22.jpg);
+  height:100vh;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.landing p {
+  text-align: center;
+  font-size: 20px;
+  font-weight:500;
+}
+.landing a {
+  padding: 15px 20px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 6px;
+  margin-top: 20px;
+  display: block;
+  cursor: pointer;
+  width:fit-content;
+}
+.main-heading {
+  color:black;
+  padding: 15px 20px;
+  border-radius: 6px;
+  border: 3px solid black;
+  width: fit-content;
+  margin: 100px auto;
+  text-transform: uppercase;
+}
+.services {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.services .container {
+  display: grid;
+  grid-template-columns:repeat(auto-fill ,minmax(300px, 1fr));
+  gap:30px;
+}
+.services .card {
+  box-shadow:0 5px 5px #dadada;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+}
+.services .card i {
+  font-size: 80px;
+  color:var(--main-color);
+  padding-bottom: 20px;
+}
+.services .card p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.contact .container {
+    display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact p{
+  font-size: 50px;
+  padding:30px;
+  width:100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  line-height: 1.6;
+}
+.contact ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.contact ul li a i {
+  font-size: 40px;
+}
+.contact ul li a:hover {
+  filter: brightness(1.2);
+}
+.contact ul li a .instagram {
+  background: linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  filter:progid:DXImageTransform.Microsoft.gradeint( startColorstr='#f09433',endColorstr='#bc1888',GradientType="1");
+  border-radius: 6px;
+}
+.contact ul li a .facebook {
+  color:#1887f2;
+}
+.contact ul li a .whatsapp {
+  color:#25d366;
+}
+.about {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 15px;
+}
+.about .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about p {
+  font-size: 25px;
+  line-height: 1.6;
+}
+
+.footer {
+  background-color:black;
+  padding: 30px 10px;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: -100px;
+}
+.footer span {
+  font-weight: bold;
+  color: var(--main-color);
+}
+@media (max-width:767px) {
+  .header .nav ul li a{
+    font-size: 18px;
+    padding: 0;
+  }
+}
